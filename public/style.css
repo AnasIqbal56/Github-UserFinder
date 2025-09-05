@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f4f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+form {
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+}
+
+#Search {
+  flex: 1;
+  padding: 12px 15px;
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+form button {
+  padding: 12px 20px;
+  border: none;
+  background: #24292f;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.usercard {
+  display: flex;
+  gap: 2rem;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.userinfo h2 {
+  margin-bottom: .5rem;
+}
+
+.userinfo p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.info {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+  font-weight: bold;
+}
+
+.repo {
+  display: inline-block;
+  background: #e1e4e8;
+  color: #0366d6;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.repo:hover {
+  background: #0366d6;
+  color: white;
+}

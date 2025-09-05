@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="style.css">
-
-    <title>GitHub Profile Finder</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub User Finder</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <form id="form" onsubmit="return FormSubmit()">
-    <input type="text" id="Search" placeholder="Search any Github User">
-</form>
-  <main id="main">
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-6">
+  <div class="w-full max-w-2xl">
+    <h1 class="text-3xl font-bold text-center mb-6">🔎 GitHub User Finder</h1>
     
-    </main>
+    <!-- Search Form -->
+    <form id="userForm" class="flex items-center gap-2 mb-6">
+      <input 
+        id="Search"
+        type="text"
+        placeholder="Enter GitHub username..."
+        class="flex-1 p-3 border rounded-lg shadow focus:outline-none focus:ring-2 focus:ring-blue-400"
+        required
+      >
+      <button 
+        type="submit"
+        class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-3 rounded-lg shadow"
+      >
+        Search
+      </button>
+    </form>
+
+    <!-- Result -->
+    <div id="main"></div>
+  </div>
 
   <script src="app.js"></script>
 </body>
